@@ -30,14 +30,14 @@ To start the FastAPI application, run:
 Bash
 # uvicorn main:app --reload
 
-## The API will be accessible at http://localhost:8000.
+# The API will be accessible at http://localhost:8000.
 
 Testing Endpoints
 Employee Management
 
 Add a new employee:
 
-## URL: http://localhost:8000/employees/
+# URL: http://localhost:8000/employees/
 Method: POST
 Request Body (JSON):
 # JSON
@@ -58,7 +58,7 @@ Method: GET
 Expected Response: A list of all employees.
 Retrieve details of a specific employee:
 #
-## URL: http://localhost:8000/employees/{employee_id}
+# URL: http://localhost:8000/employees/{employee_id}
 # Method: GET
 Expected Response: The details of the specific employee with the given employee ID.
 Update the details of a specific employee:
@@ -69,14 +69,14 @@ Request Body: Updated details of the employee (JSON format).
 Expected Response: A message indicating successful update.
 Delete a specific employee:
 ##
-## URL: http://localhost:8000/employees/{employee_id}
+# URL: http://localhost:8000/employees/{employee_id}
 Method: DELETE
 Expected Response: A message indicating successful deletion.
 Shift Management
 ##
 Assign a new shift to an employee:
 
-## URL: http://localhost:8000/shifts/
+# URL: http://localhost:8000/shifts/
 Method: POST
 Request Body (JSON):
 JSON
@@ -93,30 +93,30 @@ JSON
 Expected Response: The details of the newly assigned shift.
 Retrieve a list of all shifts:
 
-## URL: http://localhost:8000/shifts/
+# URL: http://localhost:8000/shifts/
 Method: GET
 Expected Response: A list of all shifts.
 Retrieve details of a specific shift:
 ##
-## URL: http://localhost:8000/shifts/{shift_id}
+# URL: http://localhost:8000/shifts/{shift_id}
 Method: GET
 Expected Response: The details of the specific shift with the given shift ID.
 Update a specific shift:
 ##
-## URL: http://localhost:8000/shifts/{shift_id}
+# URL: http://localhost:8000/shifts/{shift_id}
 Method: PUT
 Request Body: Updated details of the shift (JSON format).
 Expected Response: A message indicating successful update.
 Delete a specific shift:
 ##
-## URL: http://localhost:8000/shifts/{shift_id}
+# URL: http://localhost:8000/shifts/{shift_id}
 Method: DELETE
 Expected Response: A message indicating successful deletion.
 Additional Endpoints
 ##
 Retrieve all shifts assigned to a specific employee:
 
-## URL: http://localhost:8000/employees/{employee_id}/shifts
+# URL: http://localhost:8000/employees/{employee_id}/shifts
 Method: GET
 Expected Response: A list of all shifts assigned to the specific employee with the given employee ID.
 ##
